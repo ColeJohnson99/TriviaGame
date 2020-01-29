@@ -1,34 +1,89 @@
+* {
+    font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
+}
+
+html {
+    background: url("../images/naboo.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
-    background-color: beige;
-	margin: 0px;
-	padding: 0px;
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
 }
 
-.buttons-view {
-	margin: 20px 0px 20px 0px;
+h1 {
+    font-size: 2.5em;
+    color: cyan;
+    text-decoration: underline;
+    font-weight: 900;
+    text-shadow: 2px 2px 8px black;
+    margin: 10px auto;
 }
 
-.gifDiv {
-	margin-right: 10px;
-	float: left;
-	margin-bottom: 20px;
+#timer-display {
+    margin: 10px auto;
+    font-family: monospace;
+    font-size: 20px;
 }
 
-.topic {
-	margin-right: 5px;
-	margin-bottom: 5px;
-	background-color: orange;
-	color:silver;
+.start {
+    color: cyan;
+    background-color: darkcyan;
+    border: 2px outset cyan;
+    padding: 5px 15px;
+    margin: 10px auto;
 }
 
-#add-topic {
-	background-color:orange;
-	color: silver;
-	margin-top: 10px;
-	margin-bottom: 10px;
+.question-block {
+    display: none;
+    width: 960px;
+    text-align: left;
+    background-color: rgb(248, 248, 246);
+    border: 2px double burlywood;
+    padding: 10px;
 }
 
-#topic-input {
-	width: 100%;
-	margin-top: 2px;
+.question {
+    margin: 10px auto;
+}
+
+.ul {
+    list-style: none;
+}
+
+.li {
+    padding-left: 20px;
+}
+
+.done {
+    display: none;
+    border: 2px outset black;
+    padding: 5px 15px;
+    margin: 10px auto;
+}
+
+.results {
+    font-size: 20px;
+    display: none;
+}
+
+#correct, #incorrect, #unanswered {
+    margin: 10px auto;
+
+}
+
+.reset {
+    display: none;
+    color: cyan;
+    background-color: red;
+    border: 2px outset maroon;
+    border-radius: 2px;
+    padding: 5px 15px;
+    margin: 10px auto;
+
 }

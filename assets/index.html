@@ -1,43 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-	<meta charset="UTF-8">
-	<title>GifTastic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="reset.css">
+    <title>Trivia Game Basic</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="style.css">
+   
+    <link href="reset.css" type="text/css" rel="stylesheet">
+   
+    <link href="style.css" type="text/css" rel="stylesheet">
 
 </head>
 <body>
-	
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="buttons-view"></div>
-		</div> 
-	</div>
-	<div class="row">
-		<div class="col-md-9 container-fluid"> 
-			<div class="gifs-view"></div>
-		</div>
-		<div class="col-md-3">
-<!--Not able to get the add another button to work, not sure what I am missing, the button shows up on the page but doesn't work.!-->
-			<form id="gif-form">
-	      		<label for="topic-input">Add another Theme</label><br>
-	      		<input type="text" id="topic-input"><br>
-	      		<input id="add-topic" class="btn btn-default" type="submit" value="Submit">
-    		</form>
-		</div>
-	</div>
+<div class="header">
+    <h1>Hoopin and Hollerin' Trivia Game</h1>
+    <div id="timer-display">02:00</div>
+</div>
+<button class="start">Start</button>
+<div class="question-block">
+
+</div>
+<div class="results">
+    <h2 id="correct"> Correct: </h2>
+    <h2 id="incorrect"> Incorrect: </h2>
+    <h2 id="unanswered"> Unanswered: </h2>
 </div>
 
+<button class="done">Done!</button>
+
+<button class="reset">Reset</button>
 
 
-	<script type="text/javascript" src="game.js"></script>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="game.js"></script>
 </body>
 </html>
